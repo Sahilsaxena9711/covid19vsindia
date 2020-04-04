@@ -6,9 +6,9 @@ export default function Heading(props) {
             <span className={"heading-text"}>COMPILED FROM STATE GOVERNMENT NUMBERS</span>
             <span className={"states-count"}>
                 {props.stateWise.size - 1} states/uts
-                <span className={"update"}>
-                    *update now you can tap on state/ut name to view district wise data
-                </span>
+            </span>
+            <span className={"update"}>
+                *update now you can tap on state/ut to view district wise data
             </span>
         </div>
     );

@@ -6,4 +6,4 @@ export const STATE_WISE_DATA_URL = "state_district_wise.json";
 export const DESIGNER_NAME = "Saleem Khan";
 export const DEVELOPER_NAME = "Sahil Saxena";
 export const DATA_SOURCE_URL = "https://github.com/covid19india";
-export const GIT_URL = "https://github.com/Sahilsaxena9711";
+export const GIT_URL = "https://github.com/Sahilsaxena9711/covid19vsindia";

@@ -20,18 +20,17 @@ export default function Table(props) {
                     </tr>
                 </thead>
                 <tbody>
-                    {props.stateWise.map((_, k) => <tr key={k}>
+                    {props.stateWise.map((_, k) => <tr
+                        onClick={() => window.screen.width > 780 ? null : props.onStateSelect(_.state)}
+                        key={k}
+                    >
                         <td
                             width={"24%"}
                             className={"t-row"}
                             style={{ textAlign: "left" }}
                         >
                             {/* eslint-disable-next-line */}
-                            <a
-                                onClick={() => window.screen.width > 780 ? null : props.onStateSelect(_.state)}
-                            >
-                                {_.state}
-                            </a>
+                            <a>{_.state}</a>
                         </td>
                         {BODY_COLS.map((__, k) =>
                             <td
