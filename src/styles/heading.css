@@ -1,0 +1,27 @@
+
+.heading-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem; 
+}
+
+.states-count{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: "#2F80ED"; 
+}
+
+.heading-text{ 
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.update {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #EB5757 !important;
+    margin-left: 10px; 
+}

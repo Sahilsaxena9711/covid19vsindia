@@ -1,0 +1,43 @@
+
+.last-updated-container{
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    padding-top: 2rem; 
+    padding-bottom: 2rem; 
+    padding-left: 1rem; 
+    padding-right: 1rem;
+}
+
+.lastupdated-text-container{
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
+.last-updated-text{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.last-update-time{
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: #2F80ED;
+    margin-left: 10px;
+}
+
+.last-update-date{
+    font-size: 1.5rem; 
+    font-weight: 400;
+}
+
+.refresh-btn {
+    outline: none !important; 
+    background: #EAF2FD !important; 
+    border-color: #EAF2FD !important; 
+    color: #2F80ED !important; 
+    font-weight: 500 !important;
+}

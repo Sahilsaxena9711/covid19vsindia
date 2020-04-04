@@ -1,0 +1,34 @@
+import {
+    COLUMNS,
+    CARDS,
+    MODAL_COLUMNS,
+    BODY_COLS,
+} from "./columns";
+
+import {
+    DESIGNER_PROFILE_URL,
+    DEVELOPER_PROFILE_URL,
+    BASE_URL,
+    ALL_DATA_URL,
+    STATE_WISE_DATA_URL,
+    DESIGNER_NAME,
+    DEVELOPER_NAME,
+    DATA_SOURCE_URL,
+    GIT_URL
+} from "./urls";
+
+export {
+    DESIGNER_PROFILE_URL,
+    DEVELOPER_PROFILE_URL,
+    BASE_URL,
+    COLUMNS,
+    CARDS,
+    MODAL_COLUMNS,
+    GIT_URL,
+    BODY_COLS,
+    ALL_DATA_URL,
+    STATE_WISE_DATA_URL,
+    DESIGNER_NAME,
+    DEVELOPER_NAME,
+    DATA_SOURCE_URL,
+}

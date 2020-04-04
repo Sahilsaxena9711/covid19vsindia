@@ -1,0 +1,9 @@
+export const DESIGNER_PROFILE_URL = "http://www.linkedin.com/in/saleemjankhan/";
+export const DEVELOPER_PROFILE_URL = "http://www.linkedin.com/in/sahil-saxena-b65595a6/";
+export const BASE_URL = "https://api.covid19india.org/";
+export const ALL_DATA_URL = "data.json";
+export const STATE_WISE_DATA_URL = "state_district_wise.json";
+export const DESIGNER_NAME = "Saleem Khan";
+export const DEVELOPER_NAME = "Sahil Saxena";
+export const DATA_SOURCE_URL = "https://github.com/covid19india";
+export const GIT_URL = "https://github.com/Sahilsaxena9711";
