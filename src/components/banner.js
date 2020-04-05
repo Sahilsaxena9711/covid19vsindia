@@ -7,7 +7,7 @@ export default function Banner(props) {
             <span
                 className={"banner-text"}
             >
-                ALERT ! {props.cards.getIn(["delta", "confirmed"])} new cases
+                ALERT ! {props.cards.getIn(["deltaconfirmed"])} new cases
             </span>
         </div>
     );

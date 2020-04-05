@@ -17,7 +17,7 @@ import "../styles/modal.css";
 import {
   BASE_URL,
   STATE_WISE_DATA_URL,
-  ALL_DATA_URL
+  ALL_DATA_URL,
 } from "../constants";
 
 import {
@@ -68,7 +68,7 @@ class App extends React.Component {
     const newDate = new Date().toLocaleString();
     const lastUpdated = moment(
       this.state.data.getIn([
-        "key_values",
+        "statewise",
         "0",
         "lastupdatedtime"
       ])
@@ -86,7 +86,7 @@ class App extends React.Component {
     const newDate = new Date().toLocaleString();
     const lastUpdated = moment(
       this.state.data.getIn([
-        "key_values",
+        "statewise",
         "0",
         "lastupdatedtime"
       ])
@@ -96,7 +96,7 @@ class App extends React.Component {
       const hrs = moment(newDate).diff(lastUpdated, "hour");
       return hrs;
     } else {
-      return 0;
+      return mins;
     }
   }
 

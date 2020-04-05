@@ -9,19 +9,23 @@ export const COLUMNS = new OrderedMap({
     confirmed: {
         header: "C",
         key: "confirmed",
+        delta: "deltaconfirmed",
         color: "#2F80ED"
     },
     active: {
         header: "A",
         key: "active",
+        delta: "deltaactive",
         color: "#EB5757"
     },
     recovered: {
         header: "R",
+        delta: "deltarecovered",
         key: "recovered",
         color: "#6FCF97"
     },
     deceased: {
+        delta: "deltadeaths",
         header: "D",
         key: "deceased",
         color: "#828282"
@@ -31,7 +35,7 @@ export const COLUMNS = new OrderedMap({
 export const CARDS = new OrderedMap({
     confirmed: {
         key: "confirmed",
-        render: _ => _.getIn(["delta", "confirmed"]),
+        render: _ => _.get("deltaconfirmed"),
         label: "Confirmed",
         border: "0.5px solid rgba(47, 128, 237, 0.4)",
         textColor: "#2F80ED",
@@ -39,7 +43,7 @@ export const CARDS = new OrderedMap({
     },
     active: {
         key: "active",
-        render: _ => _.getIn(["delta", "active"]),
+        render: _ => _.get("deltaactive") || 0,
         label: "Active",
         border: "0.5px solid rgba(235, 87, 87, 0.4)",
         textColor: "#EB5757",
@@ -47,7 +51,7 @@ export const CARDS = new OrderedMap({
     },
     recovered: {
         key: "recovered",
-        render: _ => _.getIn(["delta", "recovered"]),
+        render: _ => _.get("deltarecovered"),
         label: "Recovered",
         border: "0.5px solid rgba(111, 207, 151, 0.4)",
         textColor: "#6FCF97",
@@ -55,7 +59,7 @@ export const CARDS = new OrderedMap({
     },
     deaths: {
         key: "deaths",
-        render: _ => _.getIn(["delta", "deaths"]),
+        render: _ => _.get("deltadeaths"),
         label: "Deceased",
         border: "0.5px solid rgba(130, 130, 130, 0.4)",
         textColor: "#828282",
@@ -77,7 +81,8 @@ export const MODAL_COLUMNS = new OrderedMap({
 export const BODY_COLS = new OrderedMap({
     confirmed: {
         key: "confirmed",
-        color: "#2F80ED"
+        color: "#2F80ED",
+        delta: "deltaconfirmed",
     },
     active: {
         key: "active",
@@ -85,10 +90,12 @@ export const BODY_COLS = new OrderedMap({
     },
     recovered: {
         key: "recovered",
-        color: "#6FCF97"
+        color: "#6FCF97",
+        delta: "deltarecovered",
     },
     deaths: {
         key: "deaths",
-        color: "#828282"
+        color: "#828282",
+        delta: "deltadeaths",
     }
 })

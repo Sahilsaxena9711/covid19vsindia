@@ -39,10 +39,10 @@ export default function Table(props) {
                                 className={"t-row"}
                             >
                                 {
-                                    _.delta[__.key] ?
-                                        <span style={{ color: __.color }}>[+{_.delta[__.key]}]</span>
+                                    +_[__.delta] ?
+                                        <span style={{ color: __.color }}>[+{_[__.delta]}]</span>
                                         : null
-                                } {_[__.key]}
+                                } {+_[__.key] || "-"}
                             </td>
                         ).toList()}
                     </tr>)}
